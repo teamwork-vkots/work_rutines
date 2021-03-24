@@ -1,0 +1,25 @@
+gcloud compute ssh frk-uqeu-bastion-op --project=fr-prd-teamworkretail-uqeu --zone=europe-west3-a -- -L 15004:frk-uqeu-dc-2:3389
+
+gcloud compute ssh frk-uqeu-bastion-op --project=fr-stg-teamworkretail-uqeu --zone=europe-west3-a -- -L 15003:frk-uqeu-dc-1:3389
+
+------Australia--------
+gcloud compute ssh sgp-uqau-bastion-op --project=fr-prd-teamworkretail-uqau --zone=asia-southeast1-a  -- -L 14001:sgp-uqau-dc-1:3389
+gcloud compute ssh sgp-uqau-bastion-op --project=fr-stg-teamworkretail-uqau --zone=asia-southeast1-a  -- -L 14001:sgp-uqau-dc-1:3389
+
+
+------Europa-------
+gcloud compute ssh frk-uqeu-bastion-op --project=fr-stg-teamworkretail-uqeu --zone=europe-west3-a -- -L 15020:frku-qeu-dc-1:3389
+
+--uqeu--
+gcloud compute ssh frk-uqeu-bastion-op --project=fr-stg-teamworkretail-uqeu --zone=europe-west3-a -- -L 15003:frk-uqeu-dc-1:3389
+gcloud compute ssh frk-uqeu-bastion-op --project=fr-prd-teamworkretail-uqeu --zone=europe-west3-a -- -L 15004:frk-uqeu-dc-1:3389
+
+
+
+gcloud compute ssh uqau-bastion-op --zone=asia-southeast1-a --project=fr-prd-teamworkretail-uqau -- -L 15011:10.166.104.194:3389
+
+
+aP4dB3cW8rE6hS6x
+
+
+
